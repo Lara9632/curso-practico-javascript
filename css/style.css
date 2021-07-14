@@ -1,0 +1,113 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+header h1 {
+  font-size: 5rem;
+  color: #8841da;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  width: 600px;
+  margin: 30px auto;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form-container {
+  max-width: 600px;
+  height: 300px;
+  margin-right: 20px;
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 20px 33px 0 rgba(0, 0, 0, 0.5);
+  color: #333;
+  background-color: #fff;
+}
+.form-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.form-container label {
+  display: block;
+  width: 400px;
+  margin: 15px auto;
+  font-size: 1.8rem;
+  font-weight: normal;
+  text-align: center;
+}
+.form-container input {
+  display: block;
+  width: 350px;
+  height: 40px;
+  margin: 15px auto;
+  padding: 0 15px;
+  font-size: 1.8rem;
+  border-radius: 20px;
+}
+.form-container .form-container__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  margin: 15px auto;
+}
+.form-container .form-container__buttons button {
+  height: auto;
+  padding: 10px;
+  display: inline-block;
+  margin: 15px 10px;
+  border-radius: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: #fff;
+}
+.form-container .form-container__buttons button:hover {
+  background-color: #8841da;
+  color: #fff;
+  cursor: pointer;
+}

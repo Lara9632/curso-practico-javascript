@@ -105,3 +105,6 @@ dist
 
 # vs code config
 .vscode
+
+#prepos config
+.prepos.config
