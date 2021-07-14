@@ -55,14 +55,14 @@ function areaCirculo(radio, PI) {
 
 console.groupEnd();
 
-function calcularPerimetroCuadrado() {
+function onClickCalcularPerimetroCuadrado() {
   const input = document.getElementById("InputCuadrado");
   const lado = input.value;
   const perimetro = perimetroCuadrado(lado);
   alert("El perimetro es: " + perimetro);
 }
 
-function calcularAreaCuadrado() {
+function onClickCalcularAreaCuadrado() {
   const input = document.getElementById("InputCuadrado");
   const lado =  parseInt(input.value);
   const area = areaCuadrado(lado);
@@ -70,7 +70,7 @@ function calcularAreaCuadrado() {
 }
 
 
-function calcularPerimetroTriangulo() {
+function onClickCalcularPerimetroTriangulo() {
   const inputLado = document.getElementById("InputLadoTriangulo");
   const lado = parseInt(inputLado.value);
 
@@ -84,7 +84,7 @@ function calcularPerimetroTriangulo() {
   alert("El perimetro es: " + perimetro);
 }
 
-function calcularAreaTriangulo() {
+function onClickCalcularAreaTriangulo() {
   const inputLado = document.getElementById("InputLadoTriangulo");
   const lado = parseInt(inputLado.value);
 
@@ -99,7 +99,7 @@ function calcularAreaTriangulo() {
 }
 
 
-function calcularPerimetroCirculo() {
+function onClickCalcularPerimetroCirculo() {
   const input = document.getElementById("InputCirculo");
   const radio = parseInt(input.value);
   const PI = Math.PI;
@@ -108,7 +108,7 @@ function calcularPerimetroCirculo() {
   alert("El perimetro es: " + perimetro);
 }
 
-function calcularAreaCirculo() {
+function onClickCalcularAreaCirculo() {
   const input = document.getElementById("InputCirculo");
   const radio = parseInt(input.value);
   const PI = Math.PI;
@@ -128,7 +128,7 @@ function alturaTrianguloIso(lado1, lado2, base) {
   }
 }
 
-function calcularAlturaTrianguloIso() {
+function onClickCalcularAlturaTrianguloIso() {
   const inputLado = document.getElementById("InputLadoTrianguloIso");
   const lado = parseInt(inputLado.value);
 
@@ -139,16 +139,22 @@ function calcularAlturaTrianguloIso() {
   alert("La altura es: " + altura);
 }
 
-// function calcularAreaTriangulo() {
-//   const inputLado = document.getElementById("InputLadoTrianguloIso");
-//   const lado = parseInt(inputLado.value);
 
-//   const inputBase = document.getElementById("InputBaseTrianguloIso");
-//   const base = parseInt(inputBase.value);
 
-//   const inputAltura = document.getElementById("InputAlturaTrianguloIso");
-//   const altura = parseInt(inputAltura.value);
+// 2do Taller Inicio
 
-//   const area = areaTriangulo(base, altura);
-//   alert("El área es: " + area);
-// }
+function calcularDescuento(precio, descuento) {
+  return precio * (100 - descuento) / 100;
+}
+
+function onClickCalcularElDescuento() {
+  const inputPrecio = document.getElementById("InputPrecio");
+  const precio = inputPrecio.value;
+
+  const inputDescuento = document.getElementById("InputDescuento");
+  const descuento = inputDescuento.value;
+
+  const precioVenta = calcularDescuento(precio, descuento);
+  alert("El precio con descuento es: " + precioVenta);
+}
+

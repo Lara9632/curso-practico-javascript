@@ -19,9 +19,9 @@
     </header>
     <main>
       <div class="title">
-        <h2>Este es le primer taller del curso práctico de JavaScript</h2>
+        <h2>Este es el primer taller del curso práctico de JavaScript</h2>
       </div>
-      <section class="main-container">
+      <section class="main-section">
         <div class="firs-container">
           <div class="form-container">
             <h2>Cálcula el área y perimetro de un cuadrado</h2>
@@ -31,10 +31,13 @@
               >
               <input id="InputCuadrado" type="number" />
               <div class="form-container__buttons">
-                <button type="button" onclick="calcularPerimetroCuadrado()">
+                <button
+                  type="button"
+                  onclick="onClickCalcularPerimetroCuadrado()"
+                >
                   Cálcular Perímetro
                 </button>
-                <button type="button" onclick="calcularAreaCuadrado()">
+                <button type="button" onclick="onClickCalcularAreaCuadrado()">
                   Cálcular Area
                 </button>
               </div>
@@ -48,10 +51,13 @@
               >
               <input id="InputCirculo" type="number" />
               <div class="form-container__buttons">
-                <button type="button" onclick="calcularPerimetroCirculo()">
+                <button
+                  type="button"
+                  onclick="onClickCalcularPerimetroCirculo()"
+                >
                   Cálcular Perímetro
                 </button>
-                <button type="button" onclick="calcularAreaCirculo()">
+                <button type="button" onclick="onClickCalcularAreaCirculo()">
                   Cálcular Area
                 </button>
               </div>
@@ -75,10 +81,13 @@
               >
               <input id="InputAlturaTriangulo" type="number" />
               <div class="form-container__buttons">
-                <button type="button" onclick="calcularPerimetroTriangulo()">
+                <button
+                  type="button"
+                  onclick="onClickCalcularPerimetroTriangulo()"
+                >
                   Cálcular Perímetro
                 </button>
-                <button type="button" onclick="calcularAreaTriangulo()">
+                <button type="button" onclick="onClickCalcularAreaTriangulo()">
                   Cálcular Area
                 </button>
               </div>
@@ -96,8 +105,37 @@
               >
               <input id="InputBaseTrianguloIso" type="number" />
               <div class="form-container__buttons">
-                <button type="button" onclick="calcularAlturaTrianguloIso()">
+                <button
+                  type="button"
+                  onclick="onClickCalcularAlturaTrianguloIso()"
+                >
                   Cálcular Altura
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="secondary-section">
+        <h2 class="secondary-container__title">Calcular Descuentos</h2>
+        <div class="title">
+          <h2>Este es el segundo taller del curso práctico de JavaScript</h2>
+        </div>
+        <div class="third-container">
+          <div id="Descuento" class="form-container">
+            <h2>Cálcula el precio de un producto incluido el descuento</h2>
+            <form action="">
+              <label for="InputPrecio"
+                >Escribe el precio original del producto</label
+              >
+              <input id="InputPrecio" type="number" />
+              <label for="InputDescuento"
+                >Escribe el descuento (%) del producto</label
+              >
+              <input id="InputDescuento" type="number" />
+              <div class="form-container__buttons">
+                <button type="button" onclick="onClickCalcularElDescuento()">
+                  Cálcular Descuento
                 </button>
               </div>
             </form>

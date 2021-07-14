@@ -33,12 +33,13 @@ header h1 {
   margin: 30px auto;
 }
 
-.main-container {
+.main-section, .secondary-section {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
+  margin-bottom: 40px;
 }
 
-.firs-container, .second-container {
+.firs-container, .second-container, .third-container {
   width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,6 +116,27 @@ header h1 {
   cursor: pointer;
 }
 
-#Triangulo, #TrianguloIso {
+#Triangulo {
   height: 440px;
+}
+
+#TrianguloIso {
+  height: 440px;
+}
+#TrianguloIso form {
+  margin-top: 50px;
+}
+
+.secondary-section {
+  margin-top: 40px;
+  text-align: center;
+}
+.secondary-section .secondary-container__title {
+  font-size: 5rem;
+  color: #8841da;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.secondary-section #Descuento {
+  height: 370px;
 }
